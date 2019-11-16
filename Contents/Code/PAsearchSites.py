@@ -94,7 +94,7 @@ import networkMileHighMedia
 import networkCherryPimps
 import siteWicked
 
-searchSites = [None] * 794
+searchSites = [None] * 795
 searchSites[0] = ["Blackedraw com","BlackedRaw","https://www.blackedraw.com","https://www.blackedraw.com/search?q="]
 searchSites[1] = ["Blacked com","Blacked","https://www.blacked.com","https://www.blacked.com/search?q="]
 searchSites[2] = ["Brazzers.com","Brazzers","http://www.brazzers.com","http://www.brazzers.com/search/all/?q="]
@@ -423,7 +423,7 @@ searchSites[324] = ["CumDisgrace","CumDisgrace","https://www.pornpros.com","http
 searchSites[325] = ["CockCompetition","CockCompetition","https://www.pornpros.com","https://pornpros.com/video/"]
 searchSites[326] = ["PimpParade","PimpParade","https://www.pornpros.com","https://pornpros.com/video/"]
 searchSites[327] = ["SquirtDisgrace","SquirtDisgrace","https://www.pornpros.com","https://pornpros.com/video/"]
-searchSites[328] = ["DigitalPlayground","DigitalPlayground","https://www.digitalplayground.com","https://www.digitalplayground.com"]
+searchSites[328] = ["DigitalPlayground","DigitalPlayground","https://www.digitalplayground.com","https://www.digitalplayground.com/scene/"]
 searchSites[329] = ["Throated","Throated","https://www.blowpass.com","https://www.blowpass.com/en/search/throated/scene/"]
 searchSites[330] = ["","","",""]
 searchSites[331] = ["Nuru Massage","Nuru Massage","https://www.fantasymassage.com","https://www.fantasymassage.com/en/search/"]
@@ -889,6 +889,8 @@ searchSites[790] = ["BCM","BCM.XXX","https://www.pimp.xxx","https://pimp.xxx/sea
 searchSites[791] = ["Petite","Petite.XXX","https://www.pimp.xxx","https://pimp.xxx/search.php?query="]
 searchSites[792] = ["Family","Family.XXX","https://www.pimp.xxx","https://pimp.xxx/search.php?query="]
 searchSites[793] = ["Wicked","Wicked Pictures","https://www.wicked.com","https://wicked.com/en/movie/"]
+searchSites[794] = ["FamilySinners","Family Sinners","https://www.familysinners.com","https://www.familysinners.com/scene/"]
+
 
 
 def getSearchBaseURL(siteID):
@@ -1029,6 +1031,7 @@ def getSearchSettings(mediaTitle):
     mediaTitle = re.sub('^lta ', 'LetsTryAnal ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^maj ', 'ManoJob ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mbb ', 'MommyBlowsBest ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^mbc ', 'MyBabysittersClub ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mbt ', 'MomsBangTeens ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mc ', 'MassageCreep ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mcu ', 'MonsterCurves ', mediaTitle, flags=re.IGNORECASE)
@@ -1054,6 +1057,7 @@ def getSearchSettings(mediaTitle):
     mediaTitle = re.sub('^mts ', 'MomsTeachSex ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mvft ', 'MyVeryFirstTime ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^mwhf ', 'MyWifesHotFriend ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^mwmp ', 'MyWifeIsMyPornstar ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^naf ', 'NeighborAffair ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^nam ', 'NaughtyAmerica ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^na ', 'NaughtyAthletics ', mediaTitle, flags=re.IGNORECASE)
@@ -1068,6 +1072,7 @@ def getSearchSettings(mediaTitle):
     mediaTitle = re.sub('^nw ', 'NaughtyWeddings ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^obj ', 'OnlyBlowjob ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^otb ', 'OnlyTeenBlowjobs ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^oyl ', 'OyeLoca ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^passion-hd ', 'PassionHD ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^pav ', 'PixAndVideo ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^pba ', 'PublicAgent ', mediaTitle, flags=re.IGNORECASE)
@@ -1098,6 +1103,7 @@ def getSearchSettings(mediaTitle):
     mediaTitle = re.sub('^tf ', 'TeenFidelity ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tgs ', 'ThisGirlSucks ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^these ', 'TheStripperExperience ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^tia ', 'TittyAttack ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tla ', 'TeensLoveAnal ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tlc ', 'TeensLoveCream ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tle ', 'TheLifeErotic ', mediaTitle, flags=re.IGNORECASE)
@@ -1106,6 +1112,8 @@ def getSearchSettings(mediaTitle):
     mediaTitle = re.sub('^tlm ', 'TeensLoveMoney ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^togc ', 'TonightsGirlfriendClassic ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tog ', 'TonightsGirlfriend ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^tp ', 'TeenPies ', mediaTitle, flags=re.IGNORECASE)
+    mediaTitle = re.sub('^trwo ', 'TheRealWorkout ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tspa ', 'TrickySpa ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tss ', 'ThatSitcomShow ', mediaTitle, flags=re.IGNORECASE)
     mediaTitle = re.sub('^tuf ', 'TheUpperFloor ', mediaTitle, flags=re.IGNORECASE)

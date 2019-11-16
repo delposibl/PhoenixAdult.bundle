@@ -469,10 +469,10 @@ class PhoenixAdultAgent(Agent.Movies):
                     results = PAsearchSites.networkPornPros.search(results,encodedTitle,title,searchTitle,siteNum,lang,searchByDateActor,searchDate, searchSiteID)
 
             ###############
-            ## DigitalPlayground
+            ## DigitalPlayground / FamilySinners
             ###############
             if siteNum == 328:
-                if searchSiteID == 9999 or searchSiteID == 328:
+                if searchSiteID == 9999 or searchSiteID == 328 or searchSiteID == 794:
                     results = PAsearchSites.siteDigitalPlayground.search(results,encodedTitle,title,searchTitle,siteNum,lang,searchByDateActor,searchDate, searchSiteID)
 
              ###############
@@ -1266,10 +1266,10 @@ class PhoenixAdultAgent(Agent.Movies):
 
         ##############################################################
         ##                                                          ##
-        ##   DigitalPlayground                                      ##
+        ##   DigitalPlayground / Family Sinners                     ##
         ##                                                          ##
         ##############################################################
-        if siteID == 328:
+        if siteID == 328 or siteID == 794:
             metadata = PAsearchSites.siteDigitalPlayground.update(metadata,siteID,movieGenres,movieActors)
 
         ##############################################################

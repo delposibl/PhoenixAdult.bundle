@@ -13,19 +13,19 @@ def search(results,encodedTitle,title,searchTitle,siteNum,lang,searchByDateActor
         sceneTitle = ''
     Log("Scene Title: " + sceneTitle)
 
-    url = "https://www.digitalplayground.com/scene/" + sceneID + "/1"
+    url = PAsearchSites.getSearchSearchURL(searchSiteID) + sceneID + "/1"
     searchResult = HTML.ElementFromURL(url)
     titleNoFormatting = searchResult.xpath('//h1[@class="wxt7nk-4 fSsARZ"]')[0].text_content().replace('Trailer for','').replace('Trailer','').strip()
     curID = url.replace('/','_').replace('?','!')
     try:
         subSite = searchResult.xpath('//div[@class="sc-11m21lp-2 fOadtn"]')[0].text_content().strip()
     except:
-        subSite = "DigitalPlayground"
+        subSite = PAsearchSites.getSearchSiteName(searchSiteID)
     if sceneTitle:
         score = 100 - Util.LevenshteinDistance(sceneTitle.lower(), titleNoFormatting.lower())
     else:
         score = 90
-    results.Append(MetadataSearchResult(id = curID + "|" + str(siteNum), name = titleNoFormatting + " [DigitalPlayground/" + subSite + "] ", score = score, lang = lang))
+    results.Append(MetadataSearchResult(id = curID + "|" + str(siteNum), name = titleNoFormatting + " [" + PAsearchSites.getSearchSiteName(searchSiteID) + "/" + subSite + "] ", score = score, lang = lang))
     return results
 
 
@@ -51,7 +51,7 @@ def update(metadata,siteID,movieGenres,movieActors):
         Log("Is Movie")
 
     # Studio
-    metadata.studio = 'DigitalPlayground'
+    metadata.studio = PAsearchSites.getSearchSiteName(siteID)
 
     # Title
     metadata.title = detailsPageElements.xpath('//h1[@class="wxt7nk-4 fSsARZ"]')[0].text_content().replace('Trailer for','').replace('Trailer','').strip()
