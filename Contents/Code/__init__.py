@@ -39,7 +39,7 @@ class PhoenixAdultAgent(Agent.Movies):
         title = media.name
         if media.primary_metadata is not None:
             title = media.primary_metadata.studio + " " + media.primary_metadata.title
-        title = title.replace('"','').replace(":","").replace("!","").replace("[","").replace("]","").replace("(","").replace(")","").replace("&","").replace('RARBG.COM','').replace('RARBG','').replace('180 180x180','').replace('180x180','').replace('Hevc','').replace('H265','').replace('Avc','').replace('5k','').replace(' 4k','').replace('.4k','').replace('2300p60','').replace('2160p60','').replace('1920p60','').replace('1600p60','').replace('2300p','').replace('2160p','').replace('1900p','').replace('1600p','').replace('1080p','').replace('720p','').replace('480p','').replace('540p','').replace('3840x1920','').replace('5400x2700','').replace(' XXX',' ').replace('MP4-KTR','').replace('Sexors','').replace('3dh','').replace('Oculus','').replace('Oculus5k','').replace('Lr','').replace('-180_','').replace('TOWN.AG_','').strip()
+        title = title.replace('"','').replace(":","").replace("!","").replace("[","").replace("]","").replace("(","").replace(")","").replace("&","").replace('RARBG.COM','').replace('RARBG','').replace('180 180x180','').replace('180x180','').replace('Hevc','').replace('H265','').replace('Avc','').replace('5k','').replace(' 4k','').replace('.4k','').replace('2300p60','').replace('2160p60','').replace('1920p60','').replace('1600p60','').replace('2300p','').replace('2160p','').replace('1900p','').replace('1600p','').replace('1080p','').replace('720p','').replace('480p','').replace('540p','').replace('3840x1920','').replace('5400x2700','').replace(' XXX',' ').replace('Ktr ','').replace('MP4-KTR','').replace('Sexors','').replace('3dh','').replace('Oculus','').replace('Oculus5k','').replace('Lr','').replace('-180_','').replace('TOWN.AG_','').strip()
 
         Log('*******MEDIA TITLE****** ' + str(title))
 
@@ -226,7 +226,7 @@ class PhoenixAdultAgent(Agent.Movies):
             ###############
             if siteNum == 380:
                 if searchSiteID == 9999 or searchSiteID == 380:
-                    results = PAsearchSites.networkGammaEnt.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
+                    results = PAsearchSites.siteGirlfriendsFilms.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
             ## Burning Angel
@@ -344,7 +344,7 @@ class PhoenixAdultAgent(Agent.Movies):
             ## Reality Kings
             ###############
             if siteNum == 137:
-                if searchSiteID == 9999 or (137 <= searchSiteID <= 182):
+                if searchSiteID == 9999 or (137 <= searchSiteID <= 182) or (822 <= searchSiteID <= 828):
                     results = PAsearchSites.siteRealityKings.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
@@ -691,11 +691,12 @@ class PhoenixAdultAgent(Agent.Movies):
                     results = PAsearchSites.networkWankz.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
-            ## SexArt / TheLifeErotic / VivThomas
+            ## MetArt Network
             ###############
             if siteNum == 621:
-                if searchSiteID == 9999 or (621 <= searchSiteID <= 623):
+                if searchSiteID == 9999 or (621 <= searchSiteID <= 623) or (753 <= searchSiteID <= 754) or (816 <= searchSiteID <= 821):
                     results = PAsearchSites.networkMetArt.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
+
             ###############
             ## Family Strokes
             ###############
@@ -723,13 +724,6 @@ class PhoenixAdultAgent(Agent.Movies):
             if siteNum == 631:
                 if searchSiteID == 9999 or (631 <= searchSiteID <= 666):
                     results = PAsearchSites.networkTMW.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
-
-            ###############
-            ## TrenchcoatX
-            ###############
-            if siteNum == 667:
-                if searchSiteID == 9999 or searchSiteID == 667:
-                    results = PAsearchSites.siteTrenchcoatX.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
             ## Screwbox
@@ -949,13 +943,6 @@ class PhoenixAdultAgent(Agent.Movies):
                     results = PAsearchSites.siteVRHush.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
-            ## MetArt
-            ###############
-            if siteNum == 753:
-                if searchSiteID == 9999 or searchSiteID == 753 or searchSiteID == 754:
-                    results = PAsearchSites.networkMetArt.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
-
-            ###############
             ## Fitting-Room
             ###############
             if siteNum == 758:
@@ -1173,11 +1160,32 @@ class PhoenixAdultAgent(Agent.Movies):
                     results = PAsearchSites.networkBang.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
 
             ###############
-            ## JAY's POV
+            ## Vivid
             ###############
             if siteNum == 814:
                 if searchSiteID == 9999 or searchSiteID == 814:
+                    results = PAsearchSites.siteVivid.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
+
+            ###############
+            ## JAY's POV
+            ###############
+            if siteNum == 815:
+                if searchSiteID == 9999 or searchSiteID == 815:
                     results = PAsearchSites.siteJaysPOV.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
+
+            ###############
+            ## PJGirls
+            ###############
+            if siteNum == 667:
+                if searchSiteID == 9999 or searchSiteID == 667:
+                    results = PAsearchSites.sitePJGirls.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
+                    
+            ###############
+            ## PureCFNM Network
+            ###############
+            if siteNum == 829:
+                if searchSiteID == 9999 or (829 <= searchSiteID <= 834):
+                    results = PAsearchSites.networkPureCFNM.search(results, encodedTitle, title, searchTitle, siteNum, lang, searchByDateActor, searchDate, searchSiteID)
                   
             siteNum += 1
 
@@ -1281,7 +1289,7 @@ class PhoenixAdultAgent(Agent.Movies):
         ##   Reality Kings                                          ##
         ##                                                          ##
         ##############################################################
-        if siteID >= 137 and siteID <= 182:
+        if (siteID >= 137 and siteID <= 182) or (siteID >= 822 and siteID <= 828):
             metadata = PAsearchSites.siteRealityKings.update(metadata, siteID, movieGenres, movieActors)
 
         ##############################################################
@@ -1409,7 +1417,7 @@ class PhoenixAdultAgent(Agent.Movies):
         ##   Gamma Entertainment                                    ##
         ##                                                          ##
         ##############################################################
-        if siteID == 183 or siteID == 278 or siteID == 281 or (siteID >= 285 and siteID <= 287) or (siteID >= 329 and siteID <= 332) or (siteID >= 351 and siteID <= 360) or (siteID >= 365 and siteID <= 374) or (siteID >= 380 and siteID <= 392) or (siteID >= 460 and siteID <= 466) or siteID == 750:
+        if siteID == 183 or siteID == 278 or siteID == 281 or (siteID >= 285 and siteID <= 287) or (siteID >= 329 and siteID <= 332) or (siteID >= 351 and siteID <= 360) or (siteID >= 365 and siteID <= 374) or (siteID >= 381 and siteID <= 392) or (siteID >= 460 and siteID <= 466) or siteID == 750:
             metadata = PAsearchSites.networkGammaEnt.update(metadata, siteID, movieGenres, movieActors)
 
         ##############################################################
@@ -1613,14 +1621,6 @@ class PhoenixAdultAgent(Agent.Movies):
 
         ##############################################################
         ##                                                          ##
-        ##  SexArt / TheLifeErotic / VivThomas                      ##
-        ##                                                          ##
-        ##############################################################
-        if (siteID >= 621 and siteID <= 623):
-            metadata = PAsearchSites.networkMetArt.updateSexArt(metadata, siteID, movieGenres, movieActors)
-
-        ##############################################################
-        ##                                                          ##
         ##  Family Strokes                                          ##
         ##                                                          ##
         ##############################################################
@@ -1650,14 +1650,6 @@ class PhoenixAdultAgent(Agent.Movies):
         ##############################################################
         if (siteID >= 631 and siteID <= 666):
             metadata = PAsearchSites.networkTMW.update(metadata, siteID, movieGenres, movieActors)
-
-        ##############################################################
-        ##                                                          ##
-        ##  TrenchcoatX                                             ##
-        ##                                                          ##
-        ##############################################################
-        if siteID == 667:
-            metadata = PAsearchSites.siteTrenchcoatX.update(metadata, siteID, movieGenres, movieActors)
 
         ##############################################################
         ##                                                          ##
@@ -1909,11 +1901,11 @@ class PhoenixAdultAgent(Agent.Movies):
 
         ##############################################################
         ##                                                          ##
-        ##  MetArt / MetArtX                                        ##
+        ##  MetArt Network                                          ##
         ##                                                          ##
         ##############################################################
-        if siteID == 753 or siteID == 754:
-            metadata = PAsearchSites.networkMetArt.updateMetArt(metadata, siteID, movieGenres, movieActors)
+        if (621 <= siteID <= 623) or (753 <= siteID <= 754) or (816 <= siteID <= 821):
+            metadata = PAsearchSites.networkMetArt.update(metadata, siteID, movieGenres, movieActors)
 
         ##############################################################
         ##                                                          ##
@@ -2173,11 +2165,43 @@ class PhoenixAdultAgent(Agent.Movies):
 
         ##############################################################
         ##                                                          ##
-        ##  JAY's POV                                               ##
+        ##  Vivid                                                   ##
         ##                                                          ##
         ##############################################################
         if siteID == 814:
+            metadata = PAsearchSites.siteVivid.update(metadata, siteID, movieGenres, movieActors)
+
+        ##############################################################
+        ##                                                          ##
+        ##  JAY's POV                                               ##
+        ##                                                          ##
+        ##############################################################
+        if siteID == 815:
             metadata = PAsearchSites.siteJaysPOV.update(metadata, siteID, movieGenres, movieActors)
+
+        ##############################################################
+        ##                                                          ##
+        ##  Girlfriends Films                                       ##
+        ##                                                          ##
+        ##############################################################
+        if siteID == 380:
+            metadata = PAsearchSites.siteGirlfriendsFilms.update(metadata, siteID, movieGenres, movieActors)
+
+        ##############################################################
+        ##                                                          ##
+        ##  PJGirls                                                 ##
+        ##                                                          ##
+        ##############################################################
+        if siteID == 667:
+            metadata = PAsearchSites.sitePJGirls.update(metadata, siteID, movieGenres, movieActors)
+
+        ##############################################################
+        ##                                                          ##
+        ##  PureCFNM Network                                        ##
+        ##                                                          ##
+        ##############################################################
+        if siteID >=  829 and siteID <= 834:
+            metadata = PAsearchSites.networkPureCFNM.update(metadata, siteID, movieGenres, movieActors)
 
         ##############################################################
         ## Cleanup Genres and Add
